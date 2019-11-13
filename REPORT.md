@@ -67,4 +67,4 @@ The training details are shown below.
 
 # Future work
 
-Testing another algorithm such as Trust Region Policy Optimization (TRPO), [Proximal Policy Optimization (PPO)](Proximal Policy Optimization Algorithms), or Distributed Distributional Deterministic Policy Gradients (D4PG) would be more efficient.
+Testing another algorithm such as Trust Region Policy Optimization (TRPO), Proximal Policy Optimization (PPO), or Distributed Distributional Deterministic Policy Gradients (D4PG) would be more efficient.
