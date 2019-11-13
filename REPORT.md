@@ -61,6 +61,6 @@ Many tests were run but the final choice of the hyperparameters was :
 The agent reached its goal (moving average >= 30 over 100 consecutive episodes) after 168 episodes.
 The training details are shown below.
 
-<img src="assets/training_scores.png" width="40%" align="top-left" alt="" title="Training Scores" />
+<img src="assets/training_scores.png" width="100%" align="center" alt="" title="Training Scores" />
 
-<img src="assets/training_plot.png" width="40%" align="top-left" alt="" title="Plot" />
+<img src="assets/training_plot.png" width="100%" align="center" alt="" title="Plot" />
