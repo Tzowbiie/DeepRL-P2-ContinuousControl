@@ -19,15 +19,15 @@ In [Continuous Control with Deep Reinforcement Learning](https://arxiv.org/pdf/1
 
 With a policy-based approach, the Actor learns how to act by directly estimating the optimal policy and maximizing reward through gradient ascent, while the Critic learns how to estimate the value of different state-action pairs with a value-based approach.
 
-## Local and target networks 
+## Local and target networks 
 
 Moreover, I used local and target networks to improve stability.
 
-## Ornstein-Uhlenbeck
+## Ornstein-Uhlenbeck process
 
 I've also used the Ornstein-Uhlenbeck process (as suggested in the previously mentioned paper by Google DeepMind), which adds a certain amount of noise to the action values at each timestep and therefore allows the arm to maintain velocity and explore the action space.
 
-## Gradient clipping
+## Gradient clipping
 
 Finally, after many failed trainings, I've decided to use gradient clipping, implemented in `Agent.learn()`, within `ddpg_agent.py`. This method sets a limit on the size of the parameter updates, and stops them from growing too fast.
 
@@ -41,7 +41,7 @@ In `model.py`, you can find the (almost similar) architectures of the Actor and 
 - ReLu activation function was used between fc1 and fc2
 - A Batch Normalization was used between the output of fc1 and its activation
 
-## Agent's hyperparameters
+## Agent's hyperparameters
 
 Many tests were run but the final choice of the hyperparameters was :
 
@@ -64,3 +64,7 @@ The training details are shown below.
 <img src="assets/training_scores.png" width="100%" align="center" alt="" title="Training Scores" />
 
 <img src="assets/training_plot.png" width="100%" align="center" alt="" title="Plot" />
+
+# Future work
+
+Testing another algorithm such as Trust Region Policy Optimization (TRPO), [Proximal Policy Optimization (PPO)](Proximal Policy Optimization Algorithms), or Distributed Distributional Deterministic Policy Gradients (D4PG) would be more efficient.
